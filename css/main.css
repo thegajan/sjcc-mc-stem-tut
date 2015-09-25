@@ -1,0 +1,42 @@
+#intro{
+  font-family: 'Open Sans', sans-serif;
+}
+#intro-content{
+  padding: 50px 0 40px;
+  text-align: center;
+  background-color: #6f5499;
+  color: #fff;
+}
+
+#intro-content h1{
+  padding: 20px 0 20px;
+}
+
+#intro-content h2 {
+  padding-bottom: 30px;
+}
+
+#intro-content ul{
+  list-style: none;
+}
+
+#intro-content ul li{
+  display: inline;
+  padding: 5px;
+}
+
+#intro-content button{
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: none;
+  text-shadow: none;
+  border: 1px solid #fff;
+  background: #6f5499;
+  color: #fff;
+}
+
+#def{
+  padding: 30px 0 40px;
+  text-align: center;
+}
