@@ -36,7 +36,19 @@
   color: #fff;
 }
 
-#def{
-  padding: 30px 0 40px;
+#intro-content button:hover{
+  background-color: #fff;
+  color: #6f5499;
+}
+
+#perks{
   text-align: center;
+  padding: 20px 0 40px;
+}
+
+#def{
+  padding: 20px 0 40px;
+  text-align: center;
+  background-color: #6f5499;
+  color: #fff;
 }
