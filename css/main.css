@@ -1,12 +1,37 @@
+#nav {
+    display: none;
+}
+
+z {
+    color: yellow;
+}
+
+#logo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
 #intro {
     font-family: 'Open Sans', sans-serif;
 }
 
 #intro-content {
-    padding: 50px 0 40px;
+    height: 57vw;
+    padding: 13vw 0;
     text-align: center;
     background-color: #6f5499;
     color: #fff;
+}
+
+#down-arrow-div {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    cursor: pointer;
 }
 
 #intro-content h1 {
@@ -14,19 +39,11 @@
 }
 
 #intro-content h2 {
-    padding-bottom: 30px;
-}
-
-#intro-content ul {
-    list-style: none;
-}
-
-#intro-content ul li {
-    display: inline;
-    padding: 5px;
+    padding-bottom: 10px;
 }
 
 #intro-content button {
+    margin: 10px 0;
     padding: 15px;
     font-size: 16px;
     border-radius: 5px;
