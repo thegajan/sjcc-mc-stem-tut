@@ -63,14 +63,26 @@
     width: 100px;
     height: 100px;
     border-radius: 100px;
+    transition: .3s;
 }
 
-/*#perks img:hover {*/
-    /*width: 120px;*/
-    /*height: 120px;*/
-    /*padding: 30px;*/
-    /*transition-duration: .3s;*/
-/*}*/
+#perks table {
+    margin: 40px 0 0;
+    width: 100%;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+#perks table tr h3 {
+    font-size: 15px;
+}
+
+#perks img:hover {
+    width: 120px;
+    height: 120px;
+    padding: 30px;
+}
 
 #def {
     padding: 20px 0 40px;
