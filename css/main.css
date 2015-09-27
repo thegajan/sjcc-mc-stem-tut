@@ -107,3 +107,33 @@ z {
     background-color: #6f5499;
     color: #fff;
 }
+
+#def table {
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+#def table, tr, td {
+    border: 1px solid #fff;
+}
+
+#def h2 {
+    margin: 0 15px;
+}
+
+#def h3 {
+    padding: 0 0 10px;
+}
+
+#classes {
+    text-align: left;
+}
+
+#classes ul {
+    padding: 0 20px;
+}
+
+#titles {
+    font-size: 17px;
+}
