@@ -48,6 +48,7 @@ $(document).ready(function () {
         $.ajax({
             type: "POST",
             url: 'https://www.readmybluebutton.com/sjcc/email.php',
+            dataType: 'jsonp',
             data: {name: name, email: email, message: message, type: emailStatus},
             success: function (response) {
                 if (response == "error") {
