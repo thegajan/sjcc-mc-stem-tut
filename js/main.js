@@ -58,6 +58,7 @@ $(document).ready(function () {
             },
             error: function (xhr, status, error) {
                 $('#form').fadeOut('fast');
+                console.log("cheese");
             }
         });
     });
