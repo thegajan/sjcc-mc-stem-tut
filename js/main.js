@@ -28,13 +28,12 @@ $(document).ready(function () {
             success: function (response) {
                 if (response == "error") {
                     $('#form').fadeOut('fast');
-                    alert('FAILED TO SEND MESSAGE');
                 }
                 //$('#task-summary').html(response);
-                alert('Message Sent!');
+                $('#form').fadeOut('fast');
             },
             error: function (xhr, status, error) {
-                alert('FAILED TO SEND MESSAGE');
+                $('#form').fadeOut('fast');
             }
         });
     });
@@ -53,13 +52,12 @@ $(document).ready(function () {
             success: function (response) {
                 if (response == "error") {
                     $('#form').fadeOut('fast');
-                    alert('FAILED TO SEND MESSAGE');
                 }
-                //$('#task-summary').html(response);
-                alert('Message Sent!');
+                $('#form').fadeOut('fast');
+
             },
             error: function (xhr, status, error) {
-                alert('FAILED TO SEND MESSAGE');
+                $('#form').fadeOut('fast');
             }
         });
     });
