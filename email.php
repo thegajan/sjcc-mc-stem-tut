@@ -1,5 +1,5 @@
 <?php
-if (@isset($_SERVER['HTTP_REFERER']) && $_SERVER['HTTP_REFERER'] == "http://www.thegajan.github.com/sjcc-mc-stem-tut") {
+if (@isset($_SERVER['HTTP_REFERER']) == "http://www.thegajan.github.com/sjcc-mc-stem-tut") {
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
