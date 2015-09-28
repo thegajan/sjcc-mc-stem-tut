@@ -6,8 +6,8 @@
           type='text/css'>
     <meta charset="utf-8"/>
     <link rel="shortcut icon" href="img_fonts/logo.png" type="image/x-icon">
+    <script type="text/javascript" src="js/jquery.js"></script>
     <title>Middle College STEM Tutoring</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -18,25 +18,22 @@
           content="STEM, SJCC, help, math, science, technology, physics, chemistry, computer science">
     <meta name="author" content="Gajan Nagaraj">
 </head>
+<div id="form">
+    <h1>Email Us!</h1>
+    <ul>
+        <li><input type="text" id="form-name" name="form-name" placeholder="Name"></li>
+        <li><input type="text" id="form-email" name="form-email" placeholder="Email"></li>
+        <li><textarea id="form-content" name="form-content" placeholder="Message"></textarea></li>
+        <li><button id="form-send">Send Message</button></li>
+        <li><button id="cancel">Cancel</button></li>
+    </ul>
+</div>
 <body>
 <nav class="navbar-default navbar-fixed-top" id="nav">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+        <div id="logo-div">
             <h1 id="logo" onclick="location.href='http://thegajan.github.io/sjcc-mc-stem-tut'" style="cursor: pointer">SJCC Middle College STEM Tutoring</h1>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-            </ul>
         </div>
         <!-- /.navbar-collapse -->
     </div>
@@ -50,9 +47,9 @@
         <h1>Need Help In Any STEM Class?</h1>
 
         <h2>Just ask!</h2>
-        <button>Email Us Your Question!</button>
+        <button id="email-start">Email Us Your Question!</button>
         <br> or <br>
-        <button>Request a One on One Tutoring Session!</button>
+        <button id="one-on-one">Request a One on One Tutoring Session!</button>
         <br>
 
         <div id="down-arrow-div"><h6>Scroll Down for More Info</h6><img id="down-arrow" src="images/chevron-down.svg"></div>
@@ -136,11 +133,11 @@
         <h2>Have Feedback?</h2>
         <h4>We believe in constructive criticism. So if you have any feedback feel free to give it!</h4>
         <ul>
-            <li><input type="text" placeholder="Name" id="name"></li>
-            <li><input type="text" placeholder="Email" id="email"></li>
+            <li><input type="text" placeholder="Name" id="name" name="name"></li>
+            <li><input type="text" placeholder="Email" id="email" name="email"></li>
         </ul>
         <ul>
-            <li><textarea placeholder="Feedback" id="text"></textarea></li>
+            <li><textarea placeholder="Feedback" id="text" name="message"></textarea></li>
             <li>
                 <button id="submit">Send Message</button>
             </li>
