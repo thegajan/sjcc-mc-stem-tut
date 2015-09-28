@@ -18,9 +18,9 @@ $(document).ready(function () {
     });
     $('#submit').click(function () {
         emailStatus = 'Feedback';
-        var name = document.getElementsByName('name').val();
-        var email = document.getElementsByName('email').val();
-        var message = document.getElementsByName('message').val();
+        var name = document.getElementsByName('name')[0].value;
+        var email = document.getElementsByName('email')[0].value;
+        var message = document.getElementsByName('message')[0].value;
         $.ajax({
             type: "POST",
             url: 'https://www.readmybluebutton.com/sjcc/email.php',
@@ -43,9 +43,9 @@ $(document).ready(function () {
         //document.getElementById("#form-name")[0].reset();
     });
     $('#form-send').click(function () {
-        var name = document.getElementsByName('form-name').val();
-        var email = document.getElementsByName('form-email').val();
-        var message = document.getElementsByName('form-content').val();
+        var name = document.getElementsByName('form-name')[0].value;
+        var email = document.getElementsByName('form-email')[0].value;
+        var message = document.getElementsByName('form-content')[0].value;
         $.ajax({
             type: "POST",
             url: 'https://www.readmybluebutton.com/sjcc/email.php',
