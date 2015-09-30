@@ -123,14 +123,18 @@ z {
     padding: 20px 0 40px;
 }
 
-#over-list {
-    margin: 50px 0 20px;
-    list-style: none;
-}
+/*#over-list {*/
+    /*margin: 50px 0 20px;*/
+    /*list-style: none;*/
+/*}*/
 
-#over-list li {
-    display: inline;
-    padding: 70px;
+/*#over-list li {*/
+    /*display: inline;*/
+    /*padding: 70px;*/
+/*}*/
+
+#mobile{
+    display: none;
 }
 
 #perks img {
@@ -165,6 +169,10 @@ z {
     text-align: center;
     background-color: #6f5499;
     color: #fff;
+}
+
+#def h4 {
+    display: none;
 }
 
 #def table {

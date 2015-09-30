@@ -8,8 +8,9 @@
     <link rel="shortcut icon" href="img_fonts/logo.png" type="image/x-icon">
     <script type="text/javascript" src="js/jquery.js"></script>
     <title>Middle College STEM Tutoring</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="only screen and (max-device-width: 1365px)">
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="only screen and (min-device-width: 1366px)">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <meta name="description"
@@ -24,8 +25,12 @@
         <li><input type="text" id="form-name" name="form-name" placeholder="Name"></li>
         <li><input type="text" id="form-email" name="form-email" placeholder="Email"></li>
         <li><textarea id="form-content" name="form-content" placeholder="Message"></textarea></li>
-        <li><button id="form-send">Send Message</button></li>
-        <li><button id="cancel">Cancel</button></li>
+        <li>
+            <button id="form-send">Send Message</button>
+        </li>
+        <li>
+            <button id="cancel">Cancel</button>
+        </li>
     </ul>
 </div>
 <body>
@@ -54,9 +59,9 @@
 
         <div id="down-arrow-div"><h6>Scroll Down for More Info</h6><img id="down-arrow" src="images/chevron-down.svg"></div>
     </div>
-    <div id="perks">
+    <div id="perks" class="mobile">
         <h1>Why ask for help through us?</h1>
-        <table>
+        <table id="web">
             <tr>
                 <td><img src="images/ios7-lightbulb-outline.svg"></td>
                 <td><img src="images/connection-bars.svg"></td>
@@ -72,14 +77,49 @@
                 <td><h3>5. Positive Learning Experience</h3></td>
             </tr>
         </table>
+
+        <table id="mobile">
+            <tr>
+                <td><img src="images/ios7-lightbulb-outline.svg"></td>
+            </tr>
+            <tr>
+                <td><h3>1. Better Understand the Subject</h3></td>
+            </tr>
+            <tr>
+                <td><img src="images/connection-bars.svg"></td>
+            </tr>
+            <tr>
+                <td><h3>2. Better Your Grades</h3></td>
+            </tr>
+            <tr>
+                <td><img src="images/ios-clock-outline.svg"></td>
+            </tr>
+            <tr>
+                <td><h3>3. Tutoring Available Around the Clock</h3></td>
+            </tr>
+            <tr>
+                <td><img src="images/social-usd.svg"></td>
+            </tr>
+            <tr>
+                <td><h3>4. Tutoring is <b>100% Free</b></h3></td>
+
+            </tr>
+            <tr>
+                <td><img src="images/thumbsup.svg"></td>
+            </tr>
+            <tr>
+                <td><h3>5. Positive Learning Experience</h3></td>
+            </tr>
+        </table>
     </div>
-    <div id='def'>
+    <div id='def' class="mobile">
         <h1>What are STEM courses?</h1>
 
         <h2>STEM stands for Science Technology Engineering and Mathematics. Thus, STEM courses are any class that falls
             under these respective fields of study.</h2>
 
         <h3>Courses We Can Help In:</h3>
+        <h4>We can help in a variety of classes! Please check the site on a desktop or email us to see if we can help you out.</h4>
         <table>
             <tr id="titles">
                 <td><h4>Math</h4></td>
@@ -129,7 +169,7 @@
         </table>
         <h5>*If your class is not listed, we might still be able to help, Just Ask! We will try our best to assist you!</h5>
     </div>
-    <div id="feedback">
+    <div id="feedback" class="mobile">
         <h2>Have Feedback?</h2>
         <h4>We believe in constructive criticism. So if you have any feedback feel free to give it!</h4>
         <ul>
@@ -145,7 +185,7 @@
     </div>
 </div>
 </body>
-<footer>
+<footer class="mobile">
     <div id="color"></div>
     <h3>Navigation</h3>
     <ul>
