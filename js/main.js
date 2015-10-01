@@ -9,11 +9,11 @@ $(document).ready(function () {
     }, false);
     $('#email-start').click(function () {
         $('#form').fadeIn('fast');
-        var emailStatus = "Email Support";
+        emailStatus = "Email Support ";
     });
     $('#one-on-one').click(function () {
         $('#form').fadeIn('fast');
-        var emailStatus = "One on One";
+        emailStatus = "One on One ";
     });
     //for email and one on one
     $('#form-send').click(function () {
@@ -38,14 +38,14 @@ $(document).ready(function () {
     });
     //for feedback
     $('#submit').click(function () {
-        var emailStatus = 'Feedback';
+        var emailStatus1 = "Feedback ";
         var name1 = document.getElementsByName('name')[0].value;
         var email1 = document.getElementsByName('email')[0].value;
         var message1 = document.getElementsByName('message')[0].value;
         $.ajax({
             type: "POST",
             url: 'https://www.readmybluebutton.com/sjcc/email.php',
-            data: {name: name1, email: email1, message: message1, type: emailStatus},
+            data: {name: name1, email: email1, message: message1, type: emailStatus1},
             success: function (response) {
                 if (response == "error") {
                     //$('#form').fadeOut('fast');
