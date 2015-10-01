@@ -7,14 +7,13 @@ $(document).ready(function () {
             $('#nav').slideUp();
         }
     }, false);
-    var emailStatus = null;
     $('#email-start').click(function () {
         $('#form').fadeIn('fast');
-        emailStatus = "Email Support";
+        var emailStatus = "Email Support";
     });
     $('#one-on-one').click(function () {
         $('#form').fadeIn('fast');
-        emailStatus = "One on One";
+        var emailStatus = "One on One";
     });
     //for email and one on one
     $('#form-send').click(function () {
@@ -39,7 +38,7 @@ $(document).ready(function () {
     });
     //for feedback
     $('#submit').click(function () {
-        emailStatus = 'Feedback';
+        var emailStatus = 'Feedback';
         var name1 = document.getElementsByName('name')[0].value;
         var email1 = document.getElementsByName('email')[0].value;
         var message1 = document.getElementsByName('message')[0].value;
