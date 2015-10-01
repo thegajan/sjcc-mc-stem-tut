@@ -16,27 +16,27 @@ $(document).ready(function () {
         $('#form').fadeIn('fast');
         emailStatus = "One on One";
     });
-    $('#submit').click(function () {
-        emailStatus = 'Feedback';
-        var name = document.getElementsByName('name')[0].value;
-        var email = document.getElementsByName('email')[0].value;
-        var message = document.getElementsByName('message')[0].value;
-        $.ajax({
-            type: "POST",
-            url: 'https://www.readmybluebutton.com/sjcc/email.php',
-            data: {name: name, email: email, message: message, type: emailStatus},
-            success: function (response) {
-                if (response == "error") {
-                    $('#form').fadeOut('fast');
-                }
-                //$('#task-summary').html(response);
-                $('#form').fadeOut('fast');
-            },
-            error: function (xhr, status, error) {
-                $('#form').fadeOut('fast');
-            }
-        });
-    });
+    //$('#submit').click(function () {
+    //    emailStatus = 'Feedback';
+    //    var name1 = document.getElementsByName('name')[0].value;
+    //    var email1 = document.getElementsByName('email')[0].value;
+    //    var message1 = document.getElementsByName('message')[0].value;
+    //    $.ajax({
+    //        type: "POST",
+    //        url: 'https://www.readmybluebutton.com/sjcc/email.php',
+    //        data: {name: name1, email: email1, message: message1, type: emailStatus},
+    //        success: function (response) {
+    //            if (response == "error") {
+    //                //$('#form').fadeOut('fast');
+    //            }
+    //            //$('#task-summary').html(response);
+    //            //$('#form').fadeOut('fast');
+    //        },
+    //        error: function (xhr, status, error) {
+    //            //$('#form').fadeOut('fast');
+    //        }
+    //    });
+    //});
     $('#cancel').click(function () {
         $('#form').fadeOut('fast');
         //document.getElementById("#form-name")[0].reset();
@@ -48,7 +48,6 @@ $(document).ready(function () {
         $.ajax({
             type: "POST",
             url: 'https://www.readmybluebutton.com/sjcc/email.php',
-            dataType: 'jsonp',
             data: {name: name, email: email, message: message, type: emailStatus},
             success: function (response) {
                 if (response == "error") {
